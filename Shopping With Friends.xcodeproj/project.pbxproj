@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6151B2BC1A8DECEC0091B4EB /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6151B2BB1A8DECEC0091B4EB /* LoginVC.swift */; };
+		6151B2BE1A8DED0D0091B4EB /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6151B2BD1A8DED0D0091B4EB /* RegisterVC.swift */; };
+		6151B2C01A8DF2A00091B4EB /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6151B2BF1A8DF2A00091B4EB /* WelcomeVC.swift */; };
+		61AD43641A8D642F002F05A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AD43631A8D642F002F05A8 /* AppDelegate.swift */; };
+		61AD43661A8D642F002F05A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AD43651A8D642F002F05A8 /* ViewController.swift */; };
+		61AD43691A8D642F002F05A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61AD43671A8D642F002F05A8 /* Main.storyboard */; };
+		61AD436B1A8D642F002F05A8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61AD436A1A8D642F002F05A8 /* Images.xcassets */; };
+		61AD436E1A8D642F002F05A8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61AD436C1A8D642F002F05A8 /* LaunchScreen.xib */; };
+		61AD437A1A8D642F002F05A8 /* Shopping_With_FriendsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AD43791A8D642F002F05A8 /* Shopping_With_FriendsTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		61AD43741A8D642F002F05A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 61AD43561A8D642E002F05A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61AD435D1A8D642F002F05A8;
+			remoteInfo = "Shopping With Friends";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6151B2BB1A8DECEC0091B4EB /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginVC.swift; path = ../LoginVC.swift; sourceTree = "<group>"; };
+		6151B2BD1A8DED0D0091B4EB /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterVC.swift; path = ../RegisterVC.swift; sourceTree = "<group>"; };
+		6151B2BF1A8DF2A00091B4EB /* WelcomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeVC.swift; path = ../WelcomeVC.swift; sourceTree = "<group>"; };
+		61AD435E1A8D642F002F05A8 /* Shopping With Friends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shopping With Friends.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61AD43621A8D642F002F05A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61AD43631A8D642F002F05A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		61AD43651A8D642F002F05A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		61AD43681A8D642F002F05A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		61AD436A1A8D642F002F05A8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		61AD436D1A8D642F002F05A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		61AD43731A8D642F002F05A8 /* Shopping With FriendsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shopping With FriendsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61AD43781A8D642F002F05A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61AD43791A8D642F002F05A8 /* Shopping_With_FriendsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shopping_With_FriendsTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61AD435B1A8D642F002F05A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61AD43701A8D642F002F05A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		61AD43551A8D642E002F05A8 = {
+			isa = PBXGroup;
+			children = (
+				61AD43601A8D642F002F05A8 /* Shopping With Friends */,
+				61AD43761A8D642F002F05A8 /* Shopping With FriendsTests */,
+				61AD435F1A8D642F002F05A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		61AD435F1A8D642F002F05A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61AD435E1A8D642F002F05A8 /* Shopping With Friends.app */,
+				61AD43731A8D642F002F05A8 /* Shopping With FriendsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61AD43601A8D642F002F05A8 /* Shopping With Friends */ = {
+			isa = PBXGroup;
+			children = (
+				61AD43631A8D642F002F05A8 /* AppDelegate.swift */,
+				61AD43651A8D642F002F05A8 /* ViewController.swift */,
+				6151B2BF1A8DF2A00091B4EB /* WelcomeVC.swift */,
+				6151B2BD1A8DED0D0091B4EB /* RegisterVC.swift */,
+				6151B2BB1A8DECEC0091B4EB /* LoginVC.swift */,
+				61AD43671A8D642F002F05A8 /* Main.storyboard */,
+				61AD436A1A8D642F002F05A8 /* Images.xcassets */,
+				61AD436C1A8D642F002F05A8 /* LaunchScreen.xib */,
+				61AD43611A8D642F002F05A8 /* Supporting Files */,
+			);
+			path = "Shopping With Friends";
+			sourceTree = "<group>";
+		};
+		61AD43611A8D642F002F05A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				61AD43621A8D642F002F05A8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		61AD43761A8D642F002F05A8 /* Shopping With FriendsTests */ = {
+			isa = PBXGroup;
+			children = (
+				61AD43791A8D642F002F05A8 /* Shopping_With_FriendsTests.swift */,
+				61AD43771A8D642F002F05A8 /* Supporting Files */,
+			);
+			path = "Shopping With FriendsTests";
+			sourceTree = "<group>";
+		};
+		61AD43771A8D642F002F05A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				61AD43781A8D642F002F05A8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		61AD435D1A8D642F002F05A8 /* Shopping With Friends */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61AD437D1A8D642F002F05A8 /* Build configuration list for PBXNativeTarget "Shopping With Friends" */;
+			buildPhases = (
+				61AD435A1A8D642F002F05A8 /* Sources */,
+				61AD435B1A8D642F002F05A8 /* Frameworks */,
+				61AD435C1A8D642F002F05A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Shopping With Friends";
+			productName = "Shopping With Friends";
+			productReference = 61AD435E1A8D642F002F05A8 /* Shopping With Friends.app */;
+			productType = "com.apple.product-type.application";
+		};
+		61AD43721A8D642F002F05A8 /* Shopping With FriendsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61AD43801A8D642F002F05A8 /* Build configuration list for PBXNativeTarget "Shopping With FriendsTests" */;
+			buildPhases = (
+				61AD436F1A8D642F002F05A8 /* Sources */,
+				61AD43701A8D642F002F05A8 /* Frameworks */,
+				61AD43711A8D642F002F05A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61AD43751A8D642F002F05A8 /* PBXTargetDependency */,
+			);
+			name = "Shopping With FriendsTests";
+			productName = "Shopping With FriendsTests";
+			productReference = 61AD43731A8D642F002F05A8 /* Shopping With FriendsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61AD43561A8D642E002F05A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = CS2340;
+				TargetAttributes = {
+					61AD435D1A8D642F002F05A8 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					61AD43721A8D642F002F05A8 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 61AD435D1A8D642F002F05A8;
+					};
+				};
+			};
+			buildConfigurationList = 61AD43591A8D642E002F05A8 /* Build configuration list for PBXProject "Shopping With Friends" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 61AD43551A8D642E002F05A8;
+			productRefGroup = 61AD435F1A8D642F002F05A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				61AD435D1A8D642F002F05A8 /* Shopping With Friends */,
+				61AD43721A8D642F002F05A8 /* Shopping With FriendsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		61AD435C1A8D642F002F05A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61AD43691A8D642F002F05A8 /* Main.storyboard in Resources */,
+				61AD436E1A8D642F002F05A8 /* LaunchScreen.xib in Resources */,
+				61AD436B1A8D642F002F05A8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61AD43711A8D642F002F05A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61AD435A1A8D642F002F05A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61AD43661A8D642F002F05A8 /* ViewController.swift in Sources */,
+				6151B2C01A8DF2A00091B4EB /* WelcomeVC.swift in Sources */,
+				6151B2BE1A8DED0D0091B4EB /* RegisterVC.swift in Sources */,
+				61AD43641A8D642F002F05A8 /* AppDelegate.swift in Sources */,
+				6151B2BC1A8DECEC0091B4EB /* LoginVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61AD436F1A8D642F002F05A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61AD437A1A8D642F002F05A8 /* Shopping_With_FriendsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		61AD43751A8D642F002F05A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61AD435D1A8D642F002F05A8 /* Shopping With Friends */;
+			targetProxy = 61AD43741A8D642F002F05A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		61AD43671A8D642F002F05A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61AD43681A8D642F002F05A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		61AD436C1A8D642F002F05A8 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61AD436D1A8D642F002F05A8 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		61AD437B1A8D642F002F05A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		61AD437C1A8D642F002F05A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		61AD437E1A8D642F002F05A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Shopping With Friends/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		61AD437F1A8D642F002F05A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Shopping With Friends/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		61AD43811A8D642F002F05A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Shopping With FriendsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shopping With Friends.app/Shopping With Friends";
+			};
+			name = Debug;
+		};
+		61AD43821A8D642F002F05A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Shopping With FriendsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shopping With Friends.app/Shopping With Friends";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		61AD43591A8D642E002F05A8 /* Build configuration list for PBXProject "Shopping With Friends" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61AD437B1A8D642F002F05A8 /* Debug */,
+				61AD437C1A8D642F002F05A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61AD437D1A8D642F002F05A8 /* Build configuration list for PBXNativeTarget "Shopping With Friends" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61AD437E1A8D642F002F05A8 /* Debug */,
+				61AD437F1A8D642F002F05A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61AD43801A8D642F002F05A8 /* Build configuration list for PBXNativeTarget "Shopping With FriendsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61AD43811A8D642F002F05A8 /* Debug */,
+				61AD43821A8D642F002F05A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 61AD43561A8D642E002F05A8 /* Project object */;
+}
