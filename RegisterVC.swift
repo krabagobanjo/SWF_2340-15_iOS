@@ -15,7 +15,6 @@ class RegisterVC: UIViewController {
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var txtConfirmPassword: UITextField!
-    var users = Dictionary<NSString, NSString>()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,36 +27,62 @@ class RegisterVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func getUsers() -> Dictionary<NSString, NSString> {
-        return users
-    }
-    
     @IBAction func confirmClicked(sender: UIButton) {
-        var username:NSString = txtUsername.text as NSString
-        var password:NSString = txtPassword.text as NSString
-        var confirmPassword:NSString = txtConfirmPassword.text as NSString
+        var username = txtUsername.text
+        var password = txtPassword.text
+        var confirmPassword = txtConfirmPassword.text
+        var email = txtEmail.text
+        var name = txtName.text
         
+        func userSignUp() {
+            var user = PFUser()
+            user.username = username
+            user.password = password
+            //user.email = email
+            
+            
+            user.signUpInBackgroundWithBlock {
+                (succeeded: Bool!, error: NSError!) -> Void in
+                if error == nil {
+                    // Hooray! Let them use the app now.
+                    var alertView:UIAlertView = UIAlertView()
+                    alertView.title = "saved!"
+                    alertView.message = "Success!"
+                    alertView.delegate = self
+                    alertView.addButtonWithTitle("Dismiss")
+                    alertView.show()
+                } else {
+                    var alertView:UIAlertView = UIAlertView()
+                    alertView.title = "Registration Failed!"
+                    alertView.message = "Try again"
+                    alertView.delegate = self
+                    alertView.addButtonWithTitle("Dismiss")
+                    alertView.show()
+                    // Show the errorString somewhere and let the user try again.
+                }
+            }
+        }
+
         if ( username == "" || password == "" ) {
             
             var alertView:UIAlertView = UIAlertView()
             alertView.title = "Registration Failed!"
             alertView.message = "Please enter Username and Password"
             alertView.delegate = self
-            alertView.addButtonWithTitle("OK")
+            alertView.addButtonWithTitle("Dismiss")
             alertView.show()
             
-        } else if ( !password.isEqualToString(confirmPassword) ) {
+        } else if ( password != confirmPassword ) {
             
             var alertView:UIAlertView = UIAlertView()
             alertView.title = "Registration Failed!"
             alertView.message = "Password Does Not Match"
             alertView.delegate = self
-            alertView.addButtonWithTitle("OK")
+            alertView.addButtonWithTitle("Dismiss")
             alertView.show()
         
         } else {
-            users.updateValue(password, forKey: username)
-            AppDelegate().setUsers(users)
+            userSignUp()
         }
     }
 
