@@ -26,23 +26,39 @@ class LoginVC: UIViewController {
     }
     
     @IBAction func singInClicked(sender: UIButton) {
-        var username:NSString = txtUsername.text as NSString
-        var password:NSString = txtPassword.text as NSString
-        var users:Dictionary<NSString, NSString> = AppDelegate().getUsers()
+        var username = txtUsername.text
+        var password = txtPassword.text
         
-        if (users[username] == password) {
-            NSLog("Login Sucess")
-    
-            var prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
-            prefs.setObject(username, forKey: "USERNAME")
-            prefs.setInteger(1, forKey: "ISLOGGEDIN")
-            prefs.synchronize()
+        if (username != "" && password != "") {
             
-            self.dismissViewControllerAnimated(true, completion: nil)
+            PFUser.logInWithUsernameInBackground(username, password:password) {
+                (user: PFUser!, error: NSError!) -> Void in
+                if user != nil {
+                    var alertView:UIAlertView = UIAlertView()
+                    alertView.title = "Login Success!"
+                    alertView.message = "Congrats!!"
+                    alertView.delegate = self
+                    alertView.addButtonWithTitle("Dismiss")
+                    alertView.show()
+                    /*var prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
+                    prefs.setObject(username, forKey: "USERNAME")
+                    prefs.setInteger(1, forKey: "ISLOGGEDIN")
+                    prefs.synchronize()
+                    self.dismissViewControllerAnimated(true, completion: nil)*/
+                } else {
+                    var alertView:UIAlertView = UIAlertView()
+                    alertView.title = "Login Failed!"
+                    alertView.message = "Wrong username or password"
+                    alertView.delegate = self
+                    alertView.addButtonWithTitle("Dismiss")
+                    alertView.show()
+                }
+            }
+            
         } else {
             var alertView:UIAlertView = UIAlertView()
             alertView.title = "Login Failed!"
-            alertView.message = "Wrong username or password"
+            alertView.message = "All Field Required"
             alertView.delegate = self
             alertView.addButtonWithTitle("Dismiss")
             alertView.show()

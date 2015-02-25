@@ -12,18 +12,13 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    var users = Dictionary<NSString, NSString>()
-    
-    func setUsers(user: Dictionary<NSString, NSString>) {
-        users = user
-    }
-    
-    func getUsers() -> Dictionary<NSString, NSString> {
-        return users
-    }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //Linking to the Parse Database
+        Parse.setApplicationId("3mfkO6NDlzi8MiAYzTtJcYYWuMub2vJpUGqbbNnv", clientKey: "Zar1Boc7tRVcPh5O9WV6oMKBSEjuivopHJnwYVAZ")
+        
         return true
     }
 
