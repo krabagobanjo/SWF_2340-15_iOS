@@ -33,17 +33,17 @@ class ViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)
 
-        let prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
-        let isLoggedIn:Int = prefs.integerForKey("ISLOGGEDIN") as Int
-        if (isLoggedIn != 1) {
-            self.performSegueWithIdentifier("goto_welcomePage", sender: self)
+        var currentUser = PFUser.currentUser()
+        if currentUser != nil {
+            self.usernameShow.text = currentUser.username
         } else {
-            self.usernameShow.text = prefs.valueForKey("USERNAME") as NSString
+            self.performSegueWithIdentifier("goto_welcomePage", sender: self)
         }
     }
 
     @IBAction func logoutClicked(sender: UIButton) {
-
+        PFUser.logOut()
+        var currentUser = PFUser.currentUser()
         self.performSegueWithIdentifier("goto_welcomePage", sender: self)
     }
 
