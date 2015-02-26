@@ -29,6 +29,7 @@
 		61AD436B1A8D642F002F05A8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61AD436A1A8D642F002F05A8 /* Images.xcassets */; };
 		61AD436E1A8D642F002F05A8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61AD436C1A8D642F002F05A8 /* LaunchScreen.xib */; };
 		61AD437A1A8D642F002F05A8 /* Shopping_With_FriendsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AD43791A8D642F002F05A8 /* Shopping_With_FriendsTests.swift */; };
+		61CB4CC81A9EF27800D9EB24 /* FriendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61CB4CC71A9EF27800D9EB24 /* FriendVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		61AD43731A8D642F002F05A8 /* Shopping With FriendsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shopping With FriendsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61AD43781A8D642F002F05A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61AD43791A8D642F002F05A8 /* Shopping_With_FriendsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shopping_With_FriendsTests.swift; sourceTree = "<group>"; };
+		61CB4CC71A9EF27800D9EB24 /* FriendVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 				6151B2BF1A8DF2A00091B4EB /* WelcomeVC.swift */,
 				6151B2BD1A8DED0D0091B4EB /* RegisterVC.swift */,
 				6151B2BB1A8DECEC0091B4EB /* LoginVC.swift */,
+				61CB4CC71A9EF27800D9EB24 /* FriendVC.swift */,
 				61AD43671A8D642F002F05A8 /* Main.storyboard */,
 				61AD436A1A8D642F002F05A8 /* Images.xcassets */,
 				61AD436C1A8D642F002F05A8 /* LaunchScreen.xib */,
@@ -287,6 +290,7 @@
 				6151B2C01A8DF2A00091B4EB /* WelcomeVC.swift in Sources */,
 				6151B2BE1A8DED0D0091B4EB /* RegisterVC.swift in Sources */,
 				61AD43641A8D642F002F05A8 /* AppDelegate.swift in Sources */,
+				61CB4CC81A9EF27800D9EB24 /* FriendVC.swift in Sources */,
 				6151B2BC1A8DECEC0091B4EB /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

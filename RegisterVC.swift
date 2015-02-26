@@ -38,8 +38,7 @@ class RegisterVC: UIViewController {
             var user = PFUser()
             user.username = username
             user.password = password
-            //user.email = email
-            
+            user.email = email
             
             user.signUpInBackgroundWithBlock {
                 (succeeded: Bool!, error: NSError!) -> Void in
