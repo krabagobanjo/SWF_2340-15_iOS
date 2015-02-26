@@ -51,6 +51,9 @@ class RegisterVC: UIViewController {
                     alertView.delegate = self
                     alertView.addButtonWithTitle("Dismiss")
                     alertView.show()
+                    
+                    self.performSegueWithIdentifier("goto_login", sender: self)
+                    
                 } else {
                     var alertView:UIAlertView = UIAlertView()
                     alertView.title = "Registration Failed!"

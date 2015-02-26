@@ -13,9 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var usernameShow: UILabel!
 
     @IBAction func logOut(sender: UIButton) {
-        let appDomain = NSBundle.mainBundle().bundleIdentifier
-        NSUserDefaults.standardUserDefaults().removePersistentDomainForName(appDomain!)
-        
+        PFUser.logOut()
+        var currentUser = PFUser.currentUser()
         self.performSegueWithIdentifier("goto_welcomePage", sender: self)
     }
     
@@ -39,12 +38,6 @@ class ViewController: UIViewController {
         } else {
             self.performSegueWithIdentifier("goto_welcomePage", sender: self)
         }
-    }
-
-    @IBAction func logoutClicked(sender: UIButton) {
-        PFUser.logOut()
-        var currentUser = PFUser.currentUser()
-        self.performSegueWithIdentifier("goto_welcomePage", sender: self)
     }
 
 

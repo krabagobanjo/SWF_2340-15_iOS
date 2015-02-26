@@ -40,11 +40,9 @@ class LoginVC: UIViewController {
                     alertView.delegate = self
                     alertView.addButtonWithTitle("Dismiss")
                     alertView.show()
-                    /*var prefs:NSUserDefaults = NSUserDefaults.standardUserDefaults()
-                    prefs.setObject(username, forKey: "USERNAME")
-                    prefs.setInteger(1, forKey: "ISLOGGEDIN")
-                    prefs.synchronize()
-                    self.dismissViewControllerAnimated(true, completion: nil)*/
+
+                    self.performSegueWithIdentifier("goto_homePage", sender: self)
+
                 } else {
                     var alertView:UIAlertView = UIAlertView()
                     alertView.title = "Login Failed!"
