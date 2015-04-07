@@ -23,6 +23,7 @@
 		6178A8D91A9CE7E50022142D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6178A8D81A9CE7E50022142D /* SystemConfiguration.framework */; };
 		6178A8DB1A9CE7ED0022142D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6178A8DA1A9CE7ED0022142D /* libz.dylib */; };
 		6178A8DD1A9CE7F50022142D /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6178A8DC1A9CE7F50022142D /* libsqlite3.dylib */; };
+		617D5D731AB9209700363020 /* FriendListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617D5D721AB9209700363020 /* FriendListVC.swift */; };
 		61AD43641A8D642F002F05A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AD43631A8D642F002F05A8 /* AppDelegate.swift */; };
 		61AD43661A8D642F002F05A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AD43651A8D642F002F05A8 /* ViewController.swift */; };
 		61AD43691A8D642F002F05A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61AD43671A8D642F002F05A8 /* Main.storyboard */; };
@@ -60,6 +61,7 @@
 		6178A8DA1A9CE7ED0022142D /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		6178A8DC1A9CE7F50022142D /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		6178A8E11A9CE98F0022142D /* Shopping With Friends-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Shopping With Friends-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		617D5D721AB9209700363020 /* FriendListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendListVC.swift; sourceTree = "<group>"; };
 		61AD435E1A8D642F002F05A8 /* Shopping With Friends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shopping With Friends.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61AD43621A8D642F002F05A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61AD43631A8D642F002F05A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				6151B2BD1A8DED0D0091B4EB /* RegisterVC.swift */,
 				6151B2BB1A8DECEC0091B4EB /* LoginVC.swift */,
 				61CB4CC71A9EF27800D9EB24 /* FriendVC.swift */,
+				617D5D721AB9209700363020 /* FriendListVC.swift */,
 				61AD43671A8D642F002F05A8 /* Main.storyboard */,
 				61AD436A1A8D642F002F05A8 /* Images.xcassets */,
 				61AD436C1A8D642F002F05A8 /* LaunchScreen.xib */,
@@ -292,6 +295,7 @@
 				61AD43641A8D642F002F05A8 /* AppDelegate.swift in Sources */,
 				61CB4CC81A9EF27800D9EB24 /* FriendVC.swift in Sources */,
 				6151B2BC1A8DECEC0091B4EB /* LoginVC.swift in Sources */,
+				617D5D731AB9209700363020 /* FriendListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
